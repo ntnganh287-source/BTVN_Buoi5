@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành FORM: Registration</title>
+    <style>
+        .blt{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: darkblue;
+        }
+    </style>
+    <style>
+        fieldset{
+            border-radius: 4px;
+            border: 1px solid
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend class="blt" style="text-align: center;">Job Application: Front-End Developer</legend>
+            <fieldset>
+                <legend class="blt"> Personal Information </legend>
+                <label for="fn" class="blt">Full Name </label><br>
+                <input type="text" id="fn" name="fn"><br>
+                <label for="e" class="blt">Email Address </label><br>
+                <input type="text" id="e" name="e"><br>
+                <label for="pn" class="blt">Phone </label><br>
+                <input type="text" id="pn" name="pn"><br>
+            </fieldset>
+            <fieldset>
+                <legend class="blt"> Application</legend>
+                <label for="cv" class="blt"> Cover Letter</label><br>
+                <textarea name="reasons" rows="10" cols="50" placeholder="Why are you great fit for this role?"></textarea><br>
+                <label for="up" class="blt"> Upload Resume/CV</label><br>
+                <input type="file" id="up" name="up" accept=".pdf, .docx, .docs" style="font-style: italic;">
+            </fieldset>
+            <br>
+                <button type="submit" class="blt" style="width: 100%; background-color:gainsboro;" > Submit Application</button>
+            
+        </fieldset>
+
+    </form>
+</body>
+</html>
